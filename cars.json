@@ -1,0 +1,50 @@
+[
+    {
+        "name": "BMW",
+        "price": 25400,
+        "image": "./images/car (1).png",
+        "model": "VM23",
+        "transimition": "Automatic",
+        "fuelType": "Diesel"
+    },
+    {
+        "name": "Toyota XML",
+        "price": 35400,
+        "image": "./images/car (2).png",
+        "model": "XM18",
+        "transimition": "Automatic",
+        "fuelType": "Diesel"
+    },
+    {
+        "name": "Nissan Duo",
+        "price": 55900,
+        "image": "./images/car (3).png",
+        "model": "ND89",
+        "transimition": "Manual",
+        "fuelType": "Petro"
+    },
+    {
+        "name": "Camio Desto",
+        "price": 45400,
+        "image": "./images/car (4).png",
+        "model": "C78D",
+        "transimition": "Manual",
+        "fuelType": "Diesel"
+    },
+    {
+        "name": "EuroEs XT",
+        "price": 75700,
+        "image": "./images/car (5).png",
+        "model": "EXT90",
+        "transimition": "Manual",
+        "fuelType": "Diesel"
+    },
+    {
+        "name": "Nissan MD",
+        "price": 25000,
+        "image": "./images/car (6).png",
+        "model": "MDI88",
+        "transimition": "Manual",
+        "fuelType": "Petro"
+    }
+]

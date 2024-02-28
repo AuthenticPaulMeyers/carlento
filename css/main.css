@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    font-family: sans-serif;
+    transition: .3s ease all;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+
+}
+
+:root{
+    --white-color: #f4f4f4;
+    --primary-color: #e63600;
+    --other-color: #b42a00;
+    --black-color: #1b1b1b;
+
+    --padding-section: .6rem 7rem;
+    --margin-section: .3rem 1rem;
+}
+
+.padding{
+    padding: var(--padding-section);
+}
+.margin{
+    margin: var(--margin-section);
+}
+
+/* custom scroll bar */
+::-webkit-scrollbar{
+    background: transparent;
+    width: 10px;
+
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--primary-color);
+    border-radius: 30px;
+}
+body{
+    padding: var(--padding-section);
+    background: var(--white-color);
+}
