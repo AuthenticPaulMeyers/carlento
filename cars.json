@@ -4,7 +4,7 @@
         "price": 25400,
         "image": "./images/car (1).png",
         "model": "VM23",
-        "transimition": "Automatic",
+        "transimition": "Auto",
         "fuelType": "Diesel"
     },
     {
@@ -12,7 +12,7 @@
         "price": 35400,
         "image": "./images/car (2).png",
         "model": "XM18",
-        "transimition": "Automatic",
+        "transimition": "Auto",
         "fuelType": "Diesel"
     },
     {
@@ -24,7 +24,7 @@
         "fuelType": "Petro"
     },
     {
-        "name": "Camio Desto",
+        "name": "Camio",
         "price": 45400,
         "image": "./images/car (4).png",
         "model": "C78D",

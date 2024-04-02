@@ -7,56 +7,204 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/queries.css">
     <link rel="stylesheet" href="./css/styles.css">
-
+    <link rel="stylesheet" href="./css/styles2.css">
+    <!-- Font Awesome Kit -->
+    <script src="https://kit.fontawesome.com/b2be361a4a.js" crossorigin="anonymous"></script>
     <title>Mysterio Car-rental</title>
 </head>
 <body>
 
     <!-- Header starts -->
-    <header class="header-section">
+    <header class="header-section" >
         <div class="logo">
             <h2>MySterio<span>.</span></h2>
         </div>
         <nav class="navigation-bar">
             <ul>
-                <li><a href="#models">Models</a></li>
-                <li><a href="#models">Pricing</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">FAQ</a></li>
+                <li><a href="#home" class="nav-link active-link">Home</a></li>
+                <li><a href="#booking" class="nav-link">Booking</a></li>
+                <li><a href="#fleet" class="nav-link ">Fleet</a></li>
+                <li><a href="#about" class="nav-link">About Us</a></li>
+                <li><a href="#contact" class="nav-link">Contact Us</a></li>
             </ul>
         </nav>
         <div class="sign-section">
-            <button class="log-in btn-primary">Sign In</button>
+            <button class="btn sign-in-btn">Sign In</button>
+            <button class="btn sign-up-btn">Sign Up</button>
         </div>
     </header>
-    
+
+    <!-- GotoTop Section starts -->
+    <button class="nav-arrow hidden">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <!-- GotoTop Section ends -->
+
     <!-- Hero Section -->
-    <section class="main-container">
+    <section class="main-container" id="home">
         <div class="left-section">
-            <h2>Need a car?</h2>
+            <h2>Enjoy your life with our best cars!</h2>
             <p>Our rental fleet is the best option for you.</p>
-            <a href="#models" class="explore-button btn-primary">Explore cars</a>
+            <a href="#models" class="explore-button btn">Explore cars</a>
         </div>
         <div class="right-section">
-            <img src="./images/car (3).png" alt="Hero-image" class="hero-image">
+            <img src="./images/hero.png" alt="Hero-image" class="hero-image" height="500">
         </div>
     </section>
 
+    <!-- How to book section -->
+    <section class="booking-section margin">
+        <div>
+            <label>Pick Up Location</label>
+            <select name="location" id="location" class="location">
+                <option value="">Select location</option>
+                <option value="lilongwe">Lilongwe</option>
+                <option value="blantyre">Blantyre</option>
+                <option value="mzuzu">Mzuzu</option>
+                <option value="zomba">Zomba</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Pick Up Date</label>
+            <input type="date" id="date" class="date">
+        </div>
+
+        <div>
+            <label>Return Date</label>
+            <input type="date" id="date" class="date">
+        </div>
+
+        <div>
+            <label>Car Model</label>
+            <select name="car-model" id="car-model" class="car-model">
+                <option value="">Select model</option>
+                <option value="BMW">BMW</option>
+                <option value="Toyota_XML">Toyota_XML</option>
+                <option value="Nissan_Duo">Nissan Duo</option>
+                <option value="Camio_Desto">Camio Desto</option>
+                <option value="EuroEs_XT">EuroEs XT</option>
+                <option value="Nissan_MD">Nissan MD</option>
+                <option value="Demio">Demio</option>
+                <option value="Honda_Freed">Honda Freed</option>
+                <option value="Sienta">Sienta</option>
+            </select>
+        </div>
+        <button class="btn book-btn">Book Now</button>
+    </section>
+
     <!-- Models section -->
-<div class="center-section-container">
-    <h1>Explore Our Rental Fleet</h1>
+<section class="center-section-container margin" id="fleet">
+    <h1 class="lg-font-size">Explore Our Rental Fleet</h1>
     <p>Find the best that suits your budget</p>
     <div class="models-section" id="models">
         <div class="left-container">
-            
+            <div class="model-name-container js-model-name" data-car-name="BMW">
+                <h3>BMW</h3>
+            </div>
+            <div class="model-name-container js-model-name" data-car-name="Toyota XML">
+                <h3>Toyota XML</h3>
+            </div>
+            <div class="model-name-container js-model-name" data-car-name="Nissan Duo">
+                <h3>Nissan Duo</h3>
+            </div>
+            <div class="model-name-container js-model-name" data-car-name="Camio">
+                <h3>Camio</h3>
+            </div>
+            <div class="model-name-container js-model-name" data-car-name="EuroEs XT">
+                <h3>EuroEs XT</h3>
+            </div>
+            <div class="model-name-container active js-model-name" data-car-name="Nissan MD">
+                <h3>Nissan MD</h3>
+            </div>
         </div>
 
         <div class="models-pricing-container">
             
         </div>
     </div>
-    <button class="btn-primary reserve-btn">Reserve Now</button>
+    <button class="btn reserve-btn">Reserve Now</button>
+</section>
+
+<!-- Book proces section starts -->
+<section class="book-section margin">
+    <h1 class="lg-font-size">Our Booking Process</h1>
+    <p>Follow these three simple steps</p>
+    <div class="book-process">
+        <div class="card">
+            <h2 class="title">
+                Choose location
+            </h2>
+            <p>See most popular location with discount prices</p>
+            <span class="icon"><i class="fa-solid fa-location-dot"></i></span>
+        </div>
+        <div>
+            <img src="images/arrows.png" alt="" width="20">
+        </div>
+        <div class="card">
+            <h2 class="title">
+                Choose Pick Up Date
+            </h2>
+            <p>Click pick up date option and choose your suitable date</p>
+            <span class="icon"><i class="fa-solid fa-calendar"></i></span>
+        </div>
+        <div>
+            <img src="images/arrows.png" alt="" width="20">
+        </div>
+        <div class="card">
+            <h2 class="title">
+                Book Your Car
+            </h2>
+            <p>Click book now and book your suitable car</p>
+            <span class="icon"><i class="fa-solid fa-car"></i></span>
+        </div>
+    </div>
+</section>
+
+<!-- Models Starts Here -->
+<!-- Models Ends Here -->
+
+<!-- Subscription section starts here -->
+<section class="subscribe margin" id="subscribe">
+    <div class="container">
+        <div class="details_left">
+            <h1>
+                Subscribe on our newsletter for more updates on latest cars
+            </h1>
+        </div>
+        <div class="details_right">
+            <div>
+                <input type="email" autocomplete="off" required class="email_input" id="email" placeholder="Enter your email address">
+                <button class="btn subscribe-btn">Subscribe</button>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Subscription section ends here -->
+
+<!-- Booking SectionStarts Here -->
+<section class="margin booking" id="booking">
+    <div class="title-container">
+        <h1 class="lg-font-size">We Have Your Needs</h1>
+        <p>Book Your Desired Car Today</p>
+    </div>
+    <div class="booking-container">
+        
+    </div>
+
+    <!-- Display Car Details  container-->
+
+<div class="view-container">
+    
 </div>
+<!-- Display Car Details  container ends-->
+</section>
+<!-- Booking SectionEnds Here -->
+
+
+
+
+
     <script src="./main.js"></script>
 </body>
 </html>
